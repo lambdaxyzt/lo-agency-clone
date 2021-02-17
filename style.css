@@ -30,6 +30,7 @@ body {
     background-color: var(--main-color);
     color: var(--secondry-color);
     font-family: var(--font-2);
+    margin: 0;
 }
 
 .cursor {
@@ -52,24 +53,34 @@ body {
     background-color: #fff;
 }
 
+
+
 header {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+
+.hero-top-flex {
+    display: flex;
+    flex: 1;
 }
 
 .social__nav {
     flex: 0;
-    margin: 20px 20px;
+    margin:2vh 2vw ;
 }
 
 .social__nav ul {
-    padding: 60px 0px;
-    margin: 0;
+    /* padding: 60px 0px; */
+    /* margin: 0; */
     height: 100%;
-    flex-basis: 20%;
+    padding: 0;
+    margin: 0;
+    /* flex-basis: 20%; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -85,18 +96,25 @@ header {
 .hero {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px auto;
 }
 
 .hero__logo {
-    padding: 0px 20%;
-    flex: 1;
+    margin: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.hero-flex-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .logo__circle--big {
+    justify-self: start;
     width: 260px;
     height: 260px;
     border-radius: 50%;
@@ -104,6 +122,7 @@ header {
 }
 
 .logo__circle--small {
+    position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -111,29 +130,34 @@ header {
 }
 
 
-/* .hero__logo   * {
-    display: inlineblock;
-} */
-
 .logo__text {
     text-transform: uppercase;
     font-size: 3rem;
     display: flex;
 }
 
-.logo__text>* {
+.logo__text > * {
     margin: 0px 10px;
+}
+
+@media (max-width:700px) {
+    .hero-flex-wrapper {
+        flex-direction: column;
+    }
+    .logo__text {
+        order: 1;
+        margin: 3vh 0px;
+    }
 }
 
 .center-strip {
     display: flex;
-    position: absolute;
     width: 100%;
     align-items: center;
-    left: 0px;
+    left: 0px;  
     bottom: 0px;
     padding: 1rem 0px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .develop {
@@ -145,7 +169,6 @@ header {
     left: 0px;
     bottom: 0px;
     opacity: 1;
-    margin-right: 100px;
 }
 
 .website-design {
@@ -157,7 +180,6 @@ header {
     left: 0px;
     bottom: 0px;
     opacity: 1;
-    margin-right: 100px;
 }
 
 .architecture {
@@ -169,7 +191,6 @@ header {
     left: 0px;
     bottom: 0px;
     opacity: 1;
-    margin-right: 100px;
 }
 
 .digital-marketing {
