@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    cursor: none;
+    /* cursor: none; */
     background-color: var(--main-color);
     color: var(--secondry-color);
     font-family: var(--font-2);
@@ -212,4 +212,101 @@ header {
 
 .center-strip-span {
     font-size: 13px;
+}
+
+
+.meet-alien {
+    height: 100vh;
+    padding: 10vh 1vw;
+    display: flex;
+}
+
+
+
+.meet-alien > *  {
+    flex-basis: 50%;
+}
+
+.meet-alien .profiles {
+    display: flex;
+    align-content: start;
+    flex-wrap: wrap;
+}
+
+.meet-alien .profiles  .profile-picture {
+    width: calc(33.333% - 10px ) ;
+    position: relative;
+    margin: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.meet-alien .profiles  .profile-picture .name {
+    display: none;
+}
+
+.meet-alien .profiles  .profile-picture .position {
+    display: none;
+}
+
+.meet-alien .profiles  .profile-picture img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.meet-alien .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1vw;
+}
+
+.meet-alien .text .header {
+    margin: 1vw;
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+.meet-alien .text .describ {
+    flex: 1;
+
+    font-size: 1.2rem;
+    margin: 1vw;
+}
+
+.meet-alien .text .describ::first-letter {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+@media (max-width:800px) {
+    .meet-alien {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .meet-alien .profiles {
+        order: 2;
+        align-content: center;
+    }
+
+    .meet-alien .profiles{
+        padding: 0px 10vw;
+        padding-bottom: 100px;
+    }
+
+    .meet-alien .text { 
+        margin-bottom: 5vh;
+        order: 1;
+    }
+    
+    .meet-alien .text .describ{
+        padding-right: 10vw;
+    }
+    .meet-alien > *  {
+        flex-basis: auto;
+    }
 }
