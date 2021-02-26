@@ -8,6 +8,18 @@
     src: url(asset/font/sawtonindustrial-light.woff2);
 }
 
+ul , li , h1 , h2 , h3 ,h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    font-family: sawton_bauhausbold;
+    text-transform: capitalize;
+    margin: 5vh 0vw;
+}
+
 :root {
     --main-color: black;
     --secondry-color: white;
@@ -31,6 +43,11 @@ body {
     color: var(--secondry-color);
     font-family: var(--font-2);
     margin: 0;
+}
+
+main {
+    margin: 10vh 1vw;
+
 }
 
 .cursor {
@@ -99,6 +116,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 0px auto;
+
 }
 
 .hero__logo {
@@ -216,8 +234,8 @@ header {
 
 
 .meet-alien {
-    height: 100vh;
-    padding: 10vh 1vw;
+    /* height: 100vh; */
+    margin: 30vh 1vw;
     display: flex;
 }
 
@@ -308,5 +326,78 @@ header {
     }
     .meet-alien > *  {
         flex-basis: auto;
+    }
+}
+
+.contact-us {
+    display: flex;
+    /* padding: 10vh 10vw; */
+    margin: 40vh 1vw;
+    margin-bottom:20vh;
+}
+
+footer {
+    margin: 0vh 1vw;
+}
+
+.contact-us > * {
+    flex-basis: 50%;
+    padding: 2vh 2vw;
+}
+
+.contact-us .text .header {
+    font-size: 3rem;
+}
+
+.contact-us .text p {
+    font-size: 1.2rem;
+}
+
+.contact-us  .info {
+    color: #fff;
+    margin:20px 0px;
+}
+
+a {
+    color: #fff;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-us form > * {
+    font-size: 2rem;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    border:medium none;
+    background-color: rgb(27, 27, 27);
+    color:#fff;
+    box-shadow: none;
+    outline: currentcolor none medium;
+}
+.contact-us form > *::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.contact-us form #input-submit {
+    font-size: 20px;
+    color: black;
+    font-family: sawtonbauhaus-bold;
+    background-color: #fff;
+}
+
+@media (max-width:800px) {
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-us  > * {
+        margin: 2vh 4vw;
     }
 }
