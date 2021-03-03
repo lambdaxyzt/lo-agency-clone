@@ -4,7 +4,8 @@
   "description": "\"# lo-agency-clone\"",
   "main": "anime.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,6 @@
   "devDependencies": {
     "live-server": "^1.2.1",
     "node-sass": "^5.0.0"
-  }
+  },
+  "keywords": []
 }
