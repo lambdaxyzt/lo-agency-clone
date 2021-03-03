@@ -1,11 +1,11 @@
 @font-face {
     font-family: sawtonbauhaus-bold;
-    src: url(asset/font/sawtonbauhaus-bold.woff2);
+    src: url(../font/sawtonbauhaus-bold.woff2);
 }
 
 @font-face {
     font-family: sawtonindustrial-light;
-    src: url(asset/font/sawtonindustrial-light.woff2);
+    src: url(../font/sawtonindustrial-light.woff2);
 }
 
 ul , li , h1 , h2 , h3 ,h4 {
