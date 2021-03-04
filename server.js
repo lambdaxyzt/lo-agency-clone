@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
             }
         })
     }
-    if(req.url == "./asset/css/style.css") {
+    if(req.url == "./asset/css/style.css" || req.url == "asset/css/style.css") {
         res.writeHead(200, {'Content-Type': 'text/css'});
         fs.readFile(req.url, {
             encoding: 'utf8'
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
             }
         })
     }
-    if(req.url == "./asset/js/app.js") {
+    if(req.url == "./asset/js/app.js" || req.url == "asset/js/app.js") {
         res.writeHead(200, {'Content-Type': 'text/javascript'});
         fs.readFile(req.url, {
             encoding: 'utf8'
