@@ -9,7 +9,7 @@ const server = http.createServer(function (req, res) {
     var filePath = '.' + req.url;
 
     if (filePath == './') {
-        filePath = './index.html';
+        filePath = './Views/index.html';
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
