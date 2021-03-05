@@ -1,50 +1,53 @@
-const http = require('http');
-const fs = require('fs');
+var http = require('http');
+var fs = require('fs');
+var path = require('path');
 
-let port = 3000;
+const port = process.env.PORT || 3000
 
-const server = http.createServer((req, res) => {
-    if(req.url == "./index.html" || req.url == "/" ) {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.readFile('./index.html', {
-            encoding: 'utf8'
-        }, (err, data) => {
-            if (!!err)
-                console.log(err.message);
-            else {
-                res.write(data)
-                res.end()
-            }
-        })
+const server = http.createServer(function (req, res) {
+
+    var filePath = '.' + req.url;
+
+    if (filePath == './') {
+        filePath = './index.html';
     }
-    if(req.url == "./asset/css/style.css" || req.url == "asset/css/style.css") {
-        res.writeHead(200, {'Content-Type': 'text/css'});
-        fs.readFile(req.url, {
-            encoding: 'utf8'
-        }, (err, data) => {
-            if (!!err)
-                console.log(err.message);
-            else {
-                res.write(data)
-                res.end()
-            }
-        })
-    }
-    if(req.url == "./asset/js/app.js" || req.url == "asset/js/app.js") {
-        res.writeHead(200, {'Content-Type': 'text/javascript'});
-        fs.readFile(req.url, {
-            encoding: 'utf8'
-        }, (err, data) => {
-            if (!!err)
-                console.log(err.message);
-            else {
-                res.write(data)
-                res.end()
-            }
-        })
-    }
+
+    var extname = String(path.extname(filePath)).toLowerCase();
+    var fileTypes = {
+        '.html': 'text/html',
+        '.js': 'text/javascript',
+        '.css': 'text/css',
+        '.json': 'application/json',
+        '.png': 'image/png',
+        '.jpg': 'image/jpg',
+        '.gif': 'image/gif',
+        '.svg': 'image/svg+xml',
+        '.wav': 'audio/wav',
+        '.mp4': 'video/mp4',
+        '.woff': 'application/font-woff',
+        '.ttf': 'application/font-ttf',
+        '.eot': 'application/vnd.ms-fontobject',
+        '.otf': 'application/font-otf',
+        '.wasm': 'application/wasm'
+    };
+
+    var contentType = fileTypes[extname] || 'application/octet-stream';
+
+    fs.readFile(filePath, function (error, data) {
+        if (error) {
+            res.write(error.message)
+            res.end();
+
+        }
+        else {
+            res.writeHead(200, { 'Content-Type': contentType });
+            res.write(data, 'utf-8');
+            res.end();
+        }
+    });
+
 });
 
 server.listen(port, () => {
     console.log(`app is listening to port ${port}`);
-})
+});
