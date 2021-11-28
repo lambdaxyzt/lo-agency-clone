@@ -1,19 +1,15 @@
 {
-  "name": "lo-agency-clone",
+  "name": "Website",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/lambdaxyzt/lo-agency-clone.git",
   "author": "Lambdaxyzt <lambdaxyzt@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "deploy": "node deploy.mjs"
+  "scripts":{
+    "deploy":"node deploy.mjs"
   },
   "dependencies": {
     "@samkirkland/ftp-deploy": "^1.1.1",
     "dotenv": "^10.0.0"
-  },
-  "packageManager": "yarn@3.1.1",
-  "devDependencies": {
-    "serve": "^13.0.2"
   }
 }

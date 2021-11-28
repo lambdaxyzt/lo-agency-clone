@@ -1,0 +1,143 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1638099031551,
+    "data": [
+        {
+            "type": "file",
+            "name": ".ftp-deploy-sync-state.json",
+            "size": 4931,
+            "hash": "818d97affce259658c04b00538e51ad636c0ca1a111c333d6e5598daa392d8fd"
+        },
+        {
+            "type": "file",
+            "name": "anime.min.js",
+            "size": 17741,
+            "hash": "5cbda29ea5096ac9404c59c77493a2f467d0eb4a27f16c750b61fc0d888dd716"
+        },
+        {
+            "type": "file",
+            "name": "app.js",
+            "size": 1083,
+            "hash": "b6d73115064c2d3915a84c08ba1c09ed059b6ecb091329af951350af6b734c02"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 14460,
+            "hash": "988f9cd0f09cf0e22df2c4dc4f9918e2158968801f7db28476061f04f1166066"
+        },
+        {
+            "type": "folder",
+            "name": "asset"
+        },
+        {
+            "type": "file",
+            "name": "style.css",
+            "size": 6764,
+            "hash": "5349e2026b1cb06cde29b87bfafcc2d2e12544334a2d542db00491dfed9b4107"
+        },
+        {
+            "type": "folder",
+            "name": "asset/font"
+        },
+        {
+            "type": "folder",
+            "name": "asset/svg"
+        },
+        {
+            "type": "folder",
+            "name": "asset/image"
+        },
+        {
+            "type": "file",
+            "name": "asset/font/sawtonbauhaus-bold.woff2",
+            "size": 21164,
+            "hash": "e2d69386f3e7755d60d93d0b90996009c1d89fe776d1c34b1811f83cbe803b65"
+        },
+        {
+            "type": "file",
+            "name": "asset/svg/architecture-logo.svg",
+            "size": 3250,
+            "hash": "38d9c1665fddf523cb20b4216ef7898c710aefc4495553b78306d42228467c0a"
+        },
+        {
+            "type": "file",
+            "name": "asset/font/sawtonindustrial-light.woff2",
+            "size": 20984,
+            "hash": "48dfcc45df913bae6f1ee5bc511af70aba8dda49a1416cfe54ba0ced56286bec"
+        },
+        {
+            "type": "file",
+            "name": "asset/svg/develop-logo.svg",
+            "size": 2521,
+            "hash": "3723b9100f550f8aee25a471d3fbb8fb7a1bad263fe03cca6054de7e4a8e72d9"
+        },
+        {
+            "type": "file",
+            "name": "asset/svg/digital-marketing-logo.svg",
+            "size": 3797,
+            "hash": "979b9e57d41e682010e4dc1fb0b94e929f30e44800651db455c05beecd769c60"
+        },
+        {
+            "type": "file",
+            "name": "asset/svg/website-design-logo.svg",
+            "size": 3046,
+            "hash": "a270c6bc275f256b5bc29740ed243172d99f0ec5cc6636a71629ae48af4caec9"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/abradolf_lincler.webp",
+            "size": 29224,
+            "hash": "c578e5f76a93374ae2b7e9cb8d6905518e31ccb865284a8f76b0821d857d34dc"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/agent-fly.jpg",
+            "size": 53311,
+            "hash": "1a7c05b53c7a67dd1784554286b828986c4f2e30f8c8f92c566fa58801cbdab1"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/captain.jpg",
+            "size": 7647,
+            "hash": "9c35f6715e335f33cbaa85f4799fbcd6747ab12bd577f6633421197fb7f3d5f3"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/Ants_in_my_eyes_johnson.webp",
+            "size": 26520,
+            "hash": "003012c6292b4c603a2a05597905ff15f5775f79b3c05aba53774416f2e5bf3d"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/index.jpg",
+            "size": 8254,
+            "hash": "88312cfac5ae1c79236db9f28290ddcc33cd23918938b5f67108291df5241330"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/elon-tusk.jpg",
+            "size": 8821,
+            "hash": "0bad9c2d8f8447b856eb16c71476407dec4aa2066fafcba65aacac6afa70e7d5"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/MeeseeksHQ.webp",
+            "size": 17020,
+            "hash": "18694080777e7f05456897bc38dc20c89332e9b6274400e43f13afc05650a054"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/evil-morty.jpg",
+            "size": 22845,
+            "hash": "c8dfe43d13bf11d7741776a467cb260beb084eefc3cd88ed2e40426580e1a658"
+        },
+        {
+            "type": "file",
+            "name": "asset/image/rick.webp",
+            "size": 65136,
+            "hash": "4c4bdf0510130b1b5cd911f9a446cd4f1aae111165e33b3e8833c9d610931704"
+        }
+    ]
+}
