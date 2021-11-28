@@ -1,0 +1,150 @@
+@font-face {
+    font-family: sawtonbauhaus-bold;
+    src: url(src/asset/font/sawtonbauhaus-bold.woff2);
+}
+
+@font-face {
+    font-family: sawtonindustrial-light;
+    src: url(src/asset/font/sawtonindustrial-light.woff2);
+}
+
+:root {
+    --main-color: black;
+    --secondry-color: white;
+    --font-1: sawtonbauhaus-bold;
+    --font-2: sawtonindustrial-light;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    cursor: none;
+    background-color: var(--main-color);
+    color: var(--secondry-color);
+    font-family: var(--font-2);
+}
+
+.cursor {
+    pointer-events: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+    mix-blend-mode: difference;
+    z-index: 9999;
+}
+
+.cursor__invert {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+    background-color: #fff;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+}
+
+.social__nav {
+    flex: 0;
+    margin: 20px 20px;
+}
+
+.social__nav ul {
+    padding: 60px 0px;
+    margin: 0;
+    height: 100%;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.social__nav li {
+    /* flex: 1; */
+    font-size: 1.5rem;
+}
+
+.social__nav svg {
+    fill: var(--secondry-color);
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__logo {
+    padding: 0px 20%;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo__circle--big {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+}
+
+.logo__circle--small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+}
+
+
+/* .hero__logo   * {
+    display: inlineblock;
+} */
+
+.logo__text {
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: flex;
+}
+
+.logo__text>* {
+    margin: 0px 10px;
+}
+
+.center-strip {
+    display: flex;
+}
+
+.develop {
+    display: grid;
+}
+
+.website-design {
+    display: grid;
+}
+
+.architecture {
+    display: grid;
+}
+
+.digital-marketing {
+    display: grid;
+}
+
+.center-strip-img {
+    margin: 10px;
+}

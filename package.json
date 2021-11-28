@@ -1,23 +1,19 @@
 {
-  "name": "website",
+  "name": "lo-agency-clone",
   "version": "1.0.0",
-  "description": "\"# lo-agency-clone\"",
-  "main": "anime.min.js",
+  "main": "index.js",
+  "repository": "https://github.com/lambdaxyzt/lo-agency-clone.git",
+  "author": "Lambdaxyzt <lambdaxyzt@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "node deploy.mjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lambdaxyzt/lo-agency-clone.git"
+  "dependencies": {
+    "@samkirkland/ftp-deploy": "^1.1.1",
+    "dotenv": "^10.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lambdaxyzt/lo-agency-clone/issues"
-  },
-  "homepage": "https://github.com/lambdaxyzt/lo-agency-clone#readme",
+  "packageManager": "yarn@3.1.1",
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "node-sass": "^5.0.0"
+    "serve": "^13.0.2"
   }
 }
